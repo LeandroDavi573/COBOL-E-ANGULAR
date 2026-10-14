@@ -1,0 +1,34 @@
+<section class="extrato">
+  <header>
+    <div>
+      <h1>Extrato de transações</h1>
+      <p>Gerado pelo COBOL, lido do transacoes.json</p>
+    </div>
+    <div class="totais">
+      <div><span>Total válido</span><strong>{{ totalValido() | currency:'BRL' }}</strong></div>
+      <div><span>Rejeitadas</span><strong>{{ rejeitadas() }}</strong></div>
+    </div>
+  </header>
+
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Cliente</th><th class="valor">Valor</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      @for (t of transacoes(); track t.id) {
+        <tr [class.rejeitada]="t.status === 'R'">
+          <td>{{ t.id }}</td>
+          <td>{{ t.cliente }}</td>
+          <td class="valor">{{ t.valor | currency:'BRL' }}</td>
+          <td>
+            <span class="selo" [class.ok]="t.status === 'V'">
+              {{ t.status === 'V' ? 'Válida' : 'Rejeitada' }}
+            </span>
+          </td>
+        </tr>
+      } @empty {
+        <tr><td colspan="4">Carregando transações...</td></tr>
+      }
+    </tbody>
+  </table>
+</section>

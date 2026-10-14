@@ -1,0 +1,16 @@
+.extrato { max-width: 760px; margin: 40px auto; padding: 0 16px; font-family: system-ui, sans-serif; color: #18201a; }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 20px; }
+h1 { margin: 0; font-size: 1.5rem; }
+header p { margin: 4px 0 0; color: #5b665d; font-size: .9rem; }
+.totais { display: flex; gap: 10px; }
+.totais div { border: 1px solid #cfd6cd; border-radius: 8px; padding: 8px 14px; }
+.totais span { display: block; font-size: .7rem; text-transform: uppercase; color: #5b665d; letter-spacing: .05em; }
+.totais strong { font-family: ui-monospace, monospace; font-size: 1.1rem; }
+table { width: 100%; border-collapse: collapse; border: 1px solid #cfd6cd; }
+th { text-align: left; background: #e8ece7; font-size: .75rem; text-transform: uppercase; color: #5b665d; padding: 10px 12px; }
+td { padding: 10px 12px; border-top: 1px solid #cfd6cd; font-variant-numeric: tabular-nums; }
+.valor { text-align: right; font-family: ui-monospace, monospace; }
+tr.rejeitada td { color: #8a948c; }
+tr.rejeitada .valor { text-decoration: line-through; }
+.selo { font-size: .75rem; font-weight: 600; padding: 3px 9px; border-radius: 99px; background: #fbe4e2; color: #b3261e; }
+.selo.ok { background: #e1f0e3; color: #1f7a35; }

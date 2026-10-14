@@ -1,0 +1,7 @@
+[
+{"id":"00001","cliente":"00042","valor":150.75,"status":"V"},
+{"id":"00002","cliente":"00042","valor":29.90,"status":"V"},
+{"id":"00003","cliente":"00107","valor":1200.00,"status":"R"},
+{"id":"00004","cliente":"00015","valor":4.50,"status":"V"},
+{"id":"00005","cliente":"00107","valor":330.10,"status":"V"}
+]
